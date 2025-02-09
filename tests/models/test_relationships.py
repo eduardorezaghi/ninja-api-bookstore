@@ -6,6 +6,7 @@ from decimal import Decimal
 
 from bookstore.models import Author, Book, Publisher, Store
 
+@pytest.mark.django_db
 class BookModelTest(TestCase):
     def setUp(self):
         self.author = Author.objects.create(
