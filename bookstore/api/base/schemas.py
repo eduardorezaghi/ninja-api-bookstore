@@ -10,6 +10,3 @@ class BaseSchema(Schema):
     created_at: datetime
     updated_at: datetime | None
     is_deleted: bool
-
-class BookResponse(BaseSchema):
-    title: str

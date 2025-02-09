@@ -1,6 +1,6 @@
 from django.test import TestCase
 from ninja.testing import TestClient
-from bookstore.api import router
+from bookstore.api.base import router
 
 class HelloTest(TestCase):
     def setUp(self):
