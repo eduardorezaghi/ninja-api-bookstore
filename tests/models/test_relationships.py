@@ -1,13 +1,13 @@
 import pytest
 
-from django.test import TestCase
+import unittest
 from datetime import datetime
 from decimal import Decimal
 
 from bookstore.models import Author, Book, Publisher, Store
 
 @pytest.mark.django_db
-class BookModelTest(TestCase):
+class BookModelTest(unittest.TestCase):
     def setUp(self):
         self.author = Author.objects.create(
             name="Test Author",
