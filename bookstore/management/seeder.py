@@ -22,7 +22,7 @@ def seed_database(
         fake = Faker()
 
     if writer:
-        writer(f'Starting database seeding...')
+        writer('Starting database seeding...')
 
     with transaction.atomic():
         # Create Authors

@@ -19,10 +19,11 @@ uvicorn = "^0.34.0"
 ipython = "^8.32.0"
 mypy = "^1.15.0"
 ruff = "^0.9.5"
+pytest-cov = "^6.0.0"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "-ra -v -p no:warnings"
+addopts = "-ra -v -p no:warnings --cov=bookstore --cov-report=term-missing"
 DJANGO_SETTINGS_MODULE = "bookstore.settings"
 testpaths = [
     "tests",

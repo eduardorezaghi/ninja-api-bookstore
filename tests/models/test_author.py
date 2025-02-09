@@ -4,7 +4,6 @@ import pytest
 import unittest
 from bookstore.models import Author
 
-from unittest import mock
 
 
 @pytest.mark.django_db
